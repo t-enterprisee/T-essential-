@@ -6,11 +6,13 @@
 <meta name="theme-color" content="#5a341f">
 <title>T-essential | Wooden Articles & Home Decor</title>
 <meta name="description" content="Discover T-essential wooden articles and home decor, including serving pieces, storage boxes, clocks, mugs and decorative products. Ask for price and availability on WhatsApp.">
+<link rel="canonical" href="https://t-enterprisee.github.io/T-essential-/">
 <meta name="keywords" content="wooden home decor, wooden articles, wooden serving set, wooden spice box, wooden storage box, wooden clock, wooden mugs, Indian wooden handicrafts, home decor India">
 <meta property="og:title" content="T-essential | Wooden Articles & Home Decor">
 <meta property="og:description" content="Warm, natural wooden articles and home decor from T-essential. Browse the original collection and ask for price on WhatsApp.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="product-01.jpg">
+<meta property="og:url" content="https://t-enterprisee.github.io/T-essential-/">
+<meta property="og:image" content="https://t-enterprisee.github.io/T-essential-/product-01.jpg">
 <link rel="icon" href="logo.png">
 <style>
 :root{--cream:#f7f0e5;--paper:#fffaf2;--wood:#5a341f;--wood2:#8a5a35;--gold:#b28a52;--ink:#2b211a;--muted:#75685d;--line:#e4d7c7;--wa:#168b4b}
@@ -68,7 +70,7 @@ const products=[
 const grid=document.getElementById('productGrid'), search=document.getElementById('search'); let filter='all';
 const wa=n=>'https://wa.me/918266004665?text='+encodeURIComponent('Hello T-essential, I am interested in: '+n+'. Please share the current price, availability and shipping details.');
 function render(){const q=search.value.trim().toLowerCase();const list=products.filter(p=>(filter==='all'||p[1]===filter)&&(!q||(p[2]+' '+p[3]).toLowerCase().includes(q)));grid.innerHTML=list.length?list.map(p=>`<article class="card"><img src="${p[0]}" alt="${p[2]} — T-essential wooden articles and home decor" loading="lazy" data-product="${p[2]}" tabindex="0" role="button" aria-label="View details for ${p[2]}"><div class="cardbody"><div class="tag">${p[1]}</div><h3>${p[2]}</h3><p>${p[3]}</p><button class="details-btn" type="button" data-product="${p[2]}">View Product Details</button><a class="ask" href="${wa(p[2])}" target="_blank" rel="noopener">💬 Ask Price & Availability</a></div></article>`).join(''):'<div class="empty">No matching products found.</div>';
-const schema={"@context":"https://schema.org","@type":"Organization","name":"T-essential","description":"Wooden articles and home decor collection.","logo":"logo.png","telephone":"+91 82660 04665","contactPoint":{"@type":"ContactPoint","telephone":"+91 82660 04665","contactType":"sales","availableLanguage":["English"]},"hasOfferCatalog":{"@type":"OfferCatalog","name":"T-essential Wooden Articles & Home Decor","itemListElement":products.map((p,i)=>({"@type":"Product","position":i+1,"name":p[2],"description":p[3],"image":[location.href+''+p[0]],"brand":{"@type":"Brand","name":"T-essential"}}))}};document.getElementById('schema').textContent=JSON.stringify(schema);}
+const schema={"@context":"https://schema.org","@type":"Organization","@id":"https://t-enterprisee.github.io/T-essential-/#organization","url":"https://t-enterprisee.github.io/T-essential-/","name":"T-essential","description":"Wooden articles and home decor. Contact T-essential for product prices, availability and shipping details.","logo":"https://t-enterprisee.github.io/T-essential-/logo.png","telephone":"+918266004665","contactPoint":{"@type":"ContactPoint","telephone":"+918266004665","contactType":"sales","availableLanguage":["English"]}};document.getElementById('schema').textContent=JSON.stringify(schema);}
 const modal=document.getElementById('productModal'),modalImage=document.getElementById('modalImage'),modalTitle=document.getElementById('modalTitle'),modalTag=document.getElementById('modalTag'),modalDescription=document.getElementById('modalDescription'),modalWhatsApp=document.getElementById('modalWhatsApp');
 function openProduct(name){const p=products.find(x=>x[2]===name);if(!p)return;modalImage.src=''+p[0];modalImage.alt=p[2]+' — T-essential original product photograph';modalTitle.textContent=p[2];modalTag.textContent=p[1];modalDescription.textContent=p[3];modalWhatsApp.href=wa(p[2]);modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
 function closeProduct(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow='';}

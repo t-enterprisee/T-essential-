@@ -10,7 +10,7 @@ Professional static catalogue website for GitHub Pages.
 - WhatsApp: +91 82660 04665
 - Search and category filtering
 - Mobile-friendly responsive design
-- Basic SEO metadata, product structured data, robots.txt
+- Basic SEO metadata, Organization structured data (no invented prices or reviews), robots.txt and sitemap.xml
 
 ## Publish on GitHub Pages
 1. Create a GitHub repository (for example `t-essential`).
