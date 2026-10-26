@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://t-enterprisee.github.io/T-essential-/sitemap.xml

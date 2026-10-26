@@ -1,24 +1,24 @@
-# T-essential — Wooden Articles & Home Decor
+# T-essential website
 
-Professional static catalogue website for GitHub Pages.
+Static site for GitHub Pages. No build step, external JavaScript, external font dependency, API key, or server-side runtime is required.
 
-## Included
-- 32 original product photographs supplied by T-essential
-- Genuine, visual product descriptions without unverified specifications
-- Click any product image to open a large product-details view
-- Product details include the original photo, description and direct WhatsApp enquiry button
-- WhatsApp: +91 82660 04665
-- Search and category filtering
-- Mobile-friendly responsive design
-- Basic SEO metadata, Organization structured data (no invented prices or reviews), robots.txt and sitemap.xml
+## Publish
+1. Extract this ZIP.
+2. Upload the contents into the root of the existing `T-essential` repository (not the ZIP file itself).
+3. Keep the `products/` and `share/` folders and all top-level product images.
+4. Commit the files and wait for GitHub Pages to publish.
+5. Open the homepage and test product links/enquiry buttons on mobile.
+6. In Google Search Console, submit `https://t-enterprisee.github.io/T-essential-/sitemap.xml` and request indexing for the homepage and selected product pages.
 
-## Publish on GitHub Pages
-1. Create a GitHub repository (for example `t-essential`).
-2. Upload **all files and the `assets` folder** from this folder.
-3. In GitHub open **Settings → Pages**.
-4. Under Build and deployment choose **Deploy from a branch**.
-5. Select your main branch and `/ (root)`, then Save.
-6. Open the Pages URL GitHub provides.
+## What is included
+- Responsive homepage with category filters, search, sort, clear filters, mobile navigation, FAQ, ordering guidance and WhatsApp contact.
+- 32 dedicated product pages, unique metadata, canonical URLs, breadcrumb structured data and related products.
+- A branded, product-specific social-sharing image for each product page. WhatsApp may display a preview when the product URL is shared; preview rendering is controlled by WhatsApp. A click-to-chat URL does not itself attach an image file.
+- Sitemap, robots.txt, favicon/logo and local assets.
+- Product photos are resized/compressed while retaining their aspect ratio to improve mobile load time.
 
-## Important
-The website does not promise prices, stock, material species, dimensions, international shipping or other specifications that were not confirmed. Confirm those details with the customer before taking an order.
+## Important content boundaries
+Prices, stock, wood species/materials, dimensions, lead times, customization, shipping terms and company credentials are not invented. These need confirmation from T-essential for each specific product/order. No public prices, ratings, reviews, unsupported guarantees or fake testimonials are included.
+
+## Contact details currently on the site
+WhatsApp/phone: +91 82660 04665. Verify this number before publishing.
