@@ -22,3 +22,7 @@ Prices, stock, wood species/materials, dimensions, lead times, customization, sh
 
 ## Contact details currently on the site
 WhatsApp/phone: +91 82660 04665. Verify this number before publishing.
+
+
+## WhatsApp product-photo sharing (important)
+Each product now has a **Share photo & enquire** action. On supported mobile browsers, it opens the native share sheet with the actual product image file and enquiry text; choose WhatsApp to attach the photo. If the browser/device cannot share files, it falls back to a WhatsApp message with the product page and image links. The fallback cannot attach a file automatically because WhatsApp click-to-chat links do not support file attachments. Test on the target Android phone after deployment.
